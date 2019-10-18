@@ -1,6 +1,6 @@
 # DHS-TANFRecertification-Public
 
-This repository contains all the code and all data we may publicize related to the
+This repository contains our code and data related to the
 [TANF Recertification Experiment](https://osf.io/aphcy/). 
 
 ## Requirements
@@ -53,7 +53,7 @@ object.  So, each file can be run independently.  E.g., to replicate the posteri
 probability calculations, one need only open `05-posterior-probs.R`, which loads the
 necessary data.  Each file from `02` writes a new `.RData` object if needed.  
 
-A single variable, `updated_by`, was removed from the planned public data on 18 October 2019.  This administrative variable was not used in any analysis.  The code used to remove it was structured as follows.
+A single variable, `updated_by`, was removed from the planned public data on 2019-10-18.  This administrative variable was not used in any analysis.  The code used to remove it was structured as follows.
 
 ```
 library(readr)
