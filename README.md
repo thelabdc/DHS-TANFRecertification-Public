@@ -6,7 +6,7 @@ This repository contains our code and data related to the
 ## Requirements
 
 The code in this repository is written primarily in R, with Python employed
-to anonymize the data. The primary code was written and last run using R 4.4.2. To 
+to anonymize the data. The primary code was last run using R 4.4.2. To 
 replicate the analysis, clone this repository, and ensure that the top-level
 directory (`DHS-TANFRecertification-Public`) has subdirectories `code` and `data`. 
 To store the figures, create subdirectory `figs`. The working directory must be 
