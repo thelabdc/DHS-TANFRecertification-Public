@@ -6,10 +6,10 @@ This repository contains our code and data related to the
 ## Requirements
 
 The code in this repository is written primarily in R, with Python employed
-to anonymize the data.  The primary code was written and last run using R 3.5.1.  To 
+to anonymize the data. The primary code was written and last run using R 4.4.2. To 
 replicate the analysis, clone this repository, and ensure that the top-level
-directory (`DHS-TANFRecertification-Public`) has subdirectories `code` and `data`.  
-To store the figures, create subdirectory `figs`.  The working directory must be 
+directory (`DHS-TANFRecertification-Public`) has subdirectories `code` and `data`. 
+To store the figures, create subdirectory `figs`. The working directory must be 
 the top-level directory (`DHS-TANFRecertification-Public`).
 
 To examine the code used to load and anonymize the original, personally-identifiable
@@ -23,7 +23,7 @@ are in the `code` directory.
 
 ### Data Prep
 
-The original raw data were read and prepared using `01-outcomes-prep.R`.  We then anonymized
+The original raw data were read and prepared using `01-outcomes-prep.R`. We then anonymized
 the prepared data using `01b-anonymize_replication_data.ipynb`.  
 
 ### Primary Analyses, including Treatment Effects
@@ -45,15 +45,15 @@ calendar dates, and deadlines.
 ## Data
 
 The original data include files for outcomes, baseline quantities, and return-to-sender information.  
-These files are read and processed in `01-outcomes-prep.R`.  The data are then 
+These files are read and processed in `01-outcomes-prep.R`. The data are then 
 written to `df_replication_anon.csv`, which is read and anonymized in 
-`01b-anonymize_replication_data.ipynb`.  The resulting `.csv` is read by 
-`02-outcomes-consort.R`.  Each subsequent file starts by reading in a `.RData`
-object.  So, each file can be run independently.  E.g., to replicate the posterior
+`01b-anonymize_replication_data.ipynb`. The resulting `.csv` is read by 
+`02-outcomes-consort.R`. Each subsequent file starts by reading in a `.RData`
+object. So, each file can be run independently. E.g., to replicate the posterior
 probability calculations, one need only open `05-posterior-probs.R`, which loads the
-necessary data.  Each file from `02` writes a new `.RData` object if needed.  
+necessary data. Each file from `02` writes a new `.RData` object if needed.  
 
-A single variable, `updated_by`, was removed from the planned public data on 2019-10-18.  This administrative variable was not used in any analysis.  The code used to remove it was structured as follows.
+A single variable, `updated_by`, was removed from the planned public data on 2019-10-18. This administrative variable was not used in any analysis. The code used to remove it was structured as follows.
 
 ```
 library(readr)
